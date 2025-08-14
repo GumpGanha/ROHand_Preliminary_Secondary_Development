@@ -18,7 +18,7 @@ colcon build
 source install/setup.bash
 ```
 
-## 4.Node rohand_urdf
+## 3.Node rohand_urdf
 
 | Topic             | Description                                                               |
 | ----------------- | ------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ source install/setup.bash
 | "th_slider_joint" | slider for thumb, control thumb by changing it's position                 |
 | "th_root_joint"   | slider for thumb root, control thumb root by changing it's position       |
 
-## 5.RUN
+## 4.RUN
 
 Launch 'launch.py' file:
 Left hand：
