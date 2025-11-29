@@ -19,7 +19,7 @@ setup(
         (os.path.join('share', package_name, 'rviz'), glob('rviz/*.rviz')),
         (os.path.join('share', package_name, 'scripts'), glob('scripts/**'))
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools','rohand_selfdef_interface', ],
     zip_safe=True,
     maintainer='oymotion',
     maintainer_email='hebin7611@hotmail.com',
@@ -31,7 +31,8 @@ setup(
             'rohand_urdf_node = scripts.rohand_urdf:main',
             'rohand_joint_state_gui = scripts.rohand_joint_state_gui:main',
             'extern_publish = scripts.extern_publish:main',
-            'rohand_joint_state_WithoutGui = scripts.rohand_joint_state_WithoutGui:main',            
+            'rohand_joint_state_WithoutGui = scripts.rohand_joint_state_WithoutGui:main',    
+            'imitate_extern_extern_pub = scripts.imitate_extern_extern_pub:main',                    
         ],
     },
 )

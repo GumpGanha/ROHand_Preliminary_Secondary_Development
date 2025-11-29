@@ -42,7 +42,8 @@ def generate_launch_description():
     extern_pub_node = Node(
         package=package_name,
         executable="extern_publish",
-        remappings=[("/external_joint_states", "/rohand_left/external_joint_states")],
+        remappings=[("/external_joint_states", "/rohand_left/external_joint_states"),
+                    ("/external_external_joint_states","/rohand_left/external_external_joint_states")],
     )
 
     finger_sync_node = Node(
