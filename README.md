@@ -1,5 +1,6 @@
 # ROHAND URDF PACKAGE FOR ROS2
 
+**This warehouse is based on [ROHand](https://github.com/oymotion/rohand_urdf_ros2.git) for secondary development**
 rohand urdf package
 
 ## 1.Clone
@@ -42,4 +43,18 @@ Right hand：
 
 ```BASH
 ros2 launch rohand_urdf_ros2 right_rviz2.launch.py
+```
+
+## GumpGan's Modify
+
+In two different **Terminal** , Launch these two files to start hands simulation which subcribe from extern joints data publication.The extern data publisher is defined in *rohand_urdf_ros2/scripts/extern_publish.py*.
+
+And may be it's better to read the description above to gain a understanding of this project wholely.  
+
+```BASH
+ros2 launch rohand_urdf_ros2 left_extern_rviz2.launch.py
+```
+
+```BASH
+ros2 launch rohand_urdf_ros2 right_extern_rviz2.launch.py 
 ```

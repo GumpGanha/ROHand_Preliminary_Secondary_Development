@@ -92,8 +92,9 @@ class ROHandURDFNode(Node):
 
         # publish message
         self.joint_states_publisher.publish(rotation_msg)
-        self.get_logger().info(f'Published rotation angle: {rotation_msg.position}\n')
-        
+        # self.get_logger().info(f'Published rotation angle: {rotation_msg.position}\n')
+        joint_info = ", ".join([f"{name}: {pos:.3f}" for name, pos in zip(rotation_msg.name, rotation_msg.position)])
+        self.get_logger().info(f'Published rotation angle: {joint_info}\n')
 
 def main(args=None):
     rclpy.init(args=args)  # 初始化rclpy

@@ -30,6 +30,8 @@ setup(
         'console_scripts': [
             'rohand_urdf_node = scripts.rohand_urdf:main',
             'rohand_joint_state_gui = scripts.rohand_joint_state_gui:main',
+            'extern_publish = scripts.extern_publish:main',
+            'rohand_joint_state_WithoutGui = scripts.rohand_joint_state_WithoutGui:main',            
         ],
     },
 )
